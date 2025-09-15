@@ -2,7 +2,7 @@ import requests
 url = "https://api.adviceslip.com/advice"
 
 resposta = requests.get(url)
-
+print("teste prof")
 if resposta.status_code == 200:
     dados = resposta.json()
     conselho = dados['slip']['advice']
